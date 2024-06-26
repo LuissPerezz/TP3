@@ -1,0 +1,32 @@
+edades = {
+    "Juan": 20,
+    "Carla": 19,
+    "Pedro": 35,
+    "Teode": 23,
+}
+
+
+print("Edades iniciales:", edades)
+
+
+edades["Juan] = 20
+print("Después de agregar a Juan:", edades)
+
+
+del edades["Carla"]
+print("Después de eliminar a Carla:", edades)
+
+
+nombre_buscado = "Teode"
+if nombre_buscado in edades:
+    print(f"La edad de {nombre_buscado} es {edades[nombre_buscado]}")
+else:
+    print(f"{nombre_buscado} no se encuentra en el registro")
+
+
+nombre_buscado = "Juan"
+edad = edades.get(nombre_buscado)
+if edad:
+    print(f"La edad de {nombre_buscado} es {edad}")
+else:
+    print(f"{nombre_buscado} no se encuentra en el registro")
